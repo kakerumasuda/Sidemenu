@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="4T2-6k-rzv">
+            <objects>
+                <viewController storyboardIdentifier="SideMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cg0-qd-QOP" customClass="SideMenuViewController" customModule="Skele" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X05-MR-lrc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-OT-63h" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Aw-55-a8a">
+                                <rect key="frame" x="0.0" y="-6" width="310" height="918"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="310" id="6hB-Cq-567"/>
+                                    <constraint firstAttribute="width" constant="310" id="iGj-ar-XND"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8Nw-OT-63h" firstAttribute="leading" secondItem="yyJ-wl-kNj" secondAttribute="leading" id="00p-yG-wJy"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1Aw-55-a8a" secondAttribute="bottom" constant="-50" id="0Qe-fm-EDp"/>
+                            <constraint firstItem="1Aw-55-a8a" firstAttribute="leading" secondItem="X05-MR-lrc" secondAttribute="leading" id="A6N-wD-BXu"/>
+                            <constraint firstAttribute="bottom" secondItem="8Nw-OT-63h" secondAttribute="bottom" id="IX5-f7-r9e"/>
+                            <constraint firstItem="8Nw-OT-63h" firstAttribute="top" secondItem="X05-MR-lrc" secondAttribute="top" id="X7F-Vi-3Yc"/>
+                            <constraint firstItem="yyJ-wl-kNj" firstAttribute="trailing" secondItem="8Nw-OT-63h" secondAttribute="trailing" id="iqc-Cc-Qw1"/>
+                            <constraint firstItem="1Aw-55-a8a" firstAttribute="top" secondItem="X05-MR-lrc" secondAttribute="topMargin" constant="-50" id="qYD-hT-5dp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yyJ-wl-kNj"/>
+                    </view>
+                    <connections>
+                        <outlet property="overlayView" destination="8Nw-OT-63h" id="KYk-Yr-rEs"/>
+                        <outlet property="sideMenuView" destination="1Aw-55-a8a" id="Fva-55-WhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0n-oS-IX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="66"/>
+        </scene>
+    </scenes>
+</document>
